@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
     //String name="codepur";
     return MaterialApp(
      // home: HomePage(),
+     debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
