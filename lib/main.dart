@@ -20,22 +20,24 @@ class MyApp extends StatelessWidget {
     //String name="codepur";
     return MaterialApp(
      // home: HomePage(),
-     debugShowCheckedModeBanner: false,
+    
       themeMode: ThemeMode.light,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         fontFamily:GoogleFonts.lato().fontFamily,
         //primaryTextTheme: GoogleFonts.latoTextTheme().
         ),     
+
       darkTheme: ThemeData(
         brightness: Brightness.dark,
        // primarySwatch: Colors.green,
       ),
-      //initialRoute: "/home",
+      debugShowCheckedModeBanner: false,
+      initialRoute: MyRoutes.homeRoute,
       routes: {
         "/":(context) => LoginPage(),
        MyRoutes.homeRoute :(context) => HomePage(),
-       MyRoutes.loginRoute :(context) => LoginPage(),
+       MyRoutes.loginRoute :(context) => LoginPage()
       },
     );
   } 
